@@ -1,0 +1,119 @@
+body {
+    background-color: #ECEDF1;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+ul {
+    list-style: none;
+}
+.header_first {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    max-width: 1600px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 210px;
+}
+.row h2 {
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 30px;
+    color: #344D71;
+}
+.header__contacts {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    align-items: center;
+    font-family: "Proxima Nova Semibold",sans-serif;
+    font-size: 25px;
+    background-color: white;
+    height: 60px;
+}
+.header__contacts>span {
+    background-color: #344D71;
+    height: 60px;
+    text-align: center;
+    color:white;
+}
+.header__contacts>p {
+    color: #A3B1B8;
+}
+.header__contacts>i {
+    color: white;
+    padding: 14px;
+    background-color: #DE9E20   ;
+}
+.navigation {
+    background-color: #F6B431;
+    height: 70px;
+    margin-left: 210px;
+    padding: 0;
+}
+.navigation__element {
+    display: inline-block;
+    font-family: "Proxima Nova Semibold", sans-serif;
+    font-size: 16pt;
+
+}
+.main {
+    margin-top: -10px;
+}
+.block_top {
+    display: flex;
+    background-color: gray;
+    background-image: url("../img/Masthead.png");
+    height: 900px;
+    max-width: 1600px;
+}
+.enrol {
+
+}
+.contact_us {
+    display: list-item;
+}
+
+@font-face {
+    font-family: FontAwesome;
+    src: local("FontAwesome"),
+    url(../font/FontAwesome.otf);
+}
+@font-face {
+    font-family: Proxima Nova Bold;
+    src: local("Proxima Nova Bold"),
+    url(../font/ProximaNovaBold.otf);
+}
+@font-face {
+    font-family: Proxima Nova Regular;
+    src: local("Proxima Nova Regular"),
+    url(../font/ProximaNovaRegular.otf);
+}
+@font-face {
+    font-family: Proxima Nova Regular Italic;
+    src: local("Proxima Nova Regular Italic"),
+    url(../font/ProximaNovaRegularItalic.otf);
+}
+@font-face {
+    font-family: Proxima Nova Semibold;
+    src: local("Proxima Nova Semibold"),
+    url(../font/ProximaNovaSemibold.otf);
+}
+@font-face {
+    font-family: Raleway-Light;
+    src: local("Raleway-Light.ttf"),
+    url(../font/Raleway-Light.ttf);
+}
+@font-face {
+    font-family: Raleway-Medium;
+    src: local("Raleway-Medium"),
+    url(../font/Raleway-Medium.ttf);
+}
+
+
+
+

@@ -3,22 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Profile</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
 </head>
 <body>
     <header class="header_first">
-        <div class="header__links">
-            <a href="#">logo</a>
-            <a href="#">linkedin</a>
-            <a href="#">facebook</a>
-            <a href="#">twitter</a>
+        <div class="row">
+            <h2>PROFILE</h2>
+            <div class="header__links">
+                <a href="#">linkedin</a>
+                <a href="#">facebook</a>
+                <a href="#">twitter</a>
+            </div>
         </div>
         <div class="header__contacts">
             <p>admin@youremail.com.au</p>
-            <a href="#">call__button</a>
-            <p>1300 555 555</p>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <span>1300 555 555</span>
         </div>
         <ul class="navigation">
-            <li class="navigation__element"><a href="#">Homeicon</a></li>
+            <li class="navigation__element"><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
             <li class="navigation__element"><a href="#">Courses</a></li>
             <li class="navigation__element"><a href="#">Our Portfolio</a></li>
             <li class="navigation__element"><a href="#">Enrol Now</a></li>
@@ -36,10 +41,15 @@
             <div class="enrol">
                 <h3>Choose from a range of great products and recognised certificate and diploma courses.  <a href="#">Enrol Online Now</a></h3>
             </div>
-            <form class="contact_us">
+            <div class="contact_us">
                 <h3></h3>
                 <p></p>
-            </form>
+                <p>Your name</p>
+                <input class="contact__placeholder" type="text" placeholder="">
+                <p>Contact Number</p>
+                <input class="contact__placeholder" type="text" placeholder=""><br>
+                <button class="subscribe__button" id="subscribe__button">SUBSCRIBE</button>
+            </div>
         </div>
         <div class="">
             <div class="base>">
