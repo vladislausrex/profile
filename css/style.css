@@ -1,9 +1,9 @@
 body {
     background-color: #ECEDF1;
+    margin-left: 100px;
 }
 a {
     text-decoration: none;
-    color: white;
 }
 ul {
     list-style: none;
@@ -19,11 +19,13 @@ ul {
     justify-content: space-between;
     align-items: center;
     margin-left: 210px;
+    margin-bottom: 15px;
 }
 .row h2 {
     font-family: "Proxima Nova", sans-serif;
     font-size: 30px;
     color: #344D71;
+    margin-top: 43px;
 }
 .header__contacts {
     display: flex;
@@ -33,38 +35,47 @@ ul {
     font-family: "Proxima Nova Semibold",sans-serif;
     font-size: 25px;
     background-color: white;
-    height: 60px;
+    height: 50px;
 }
-.header__contacts>span {
+.header__contacts>div {
     background-color: #344D71;
-    height: 60px;
-    text-align: center;
+    text-align: left;
+    width: 25%;
     color:white;
+    padding: 11px 0;
+    padding-left: 30px;
 }
 .header__contacts>p {
     color: #A3B1B8;
+    font-family: "Proxima Nova",sans-serif;
+    font-size: 14px;
+    padding-right: 50px;
 }
 .header__contacts>i {
     color: white;
-    padding: 14px;
-    background-color: #DE9E20   ;
+    padding: 13px 15px;
+    background-color: #DE9E20;
+    text-align: center;
+}
+.header__links {
+    color: black;
 }
 .navigation {
     background-color: #F6B431;
     height: 70px;
-    margin-left: 210px;
     padding: 0;
+    margin: 0 0 0 210px;
 }
 .navigation__element {
     display: inline-block;
     font-family: "Proxima Nova Semibold", sans-serif;
     font-size: 16pt;
-
 }
 .main {
     margin-top: -10px;
 }
 .block_top {
+    margin-top: -50px;
     display: flex;
     background-color: gray;
     background-image: url("../img/Masthead.png");
@@ -72,48 +83,71 @@ ul {
     max-width: 1600px;
 }
 .enrol {
-
+    background-color: #83969F;
+    width: 780px;
+    font-size: 20px;
 }
 .contact_us {
+    margin-left: 990px;
+    margin-top: 585px;
+    position: absolute;
     display: list-item;
+    background-color: #344D71;
+    height: 355px;
+    width: 340px;
+    padding: 30px;
+}
+.contact_us p {
+    font-family: "Proxima Nova Semibold",sans-serif;
+    font-size: 14px;
 }
 
 @font-face {
     font-family: FontAwesome;
     src: local("FontAwesome"),
-    url(../font/FontAwesome.otf);
+    url(../fonts/FontAwesome.otf);
 }
 @font-face {
     font-family: Proxima Nova Bold;
     src: local("Proxima Nova Bold"),
-    url(../font/ProximaNovaBold.otf);
+    url(../fonts/ProximaNovaBold.otf);
 }
 @font-face {
     font-family: Proxima Nova Regular;
     src: local("Proxima Nova Regular"),
-    url(../font/ProximaNovaRegular.otf);
+    url(../fonts/ProximaNovaRegular.otf);
 }
 @font-face {
     font-family: Proxima Nova Regular Italic;
     src: local("Proxima Nova Regular Italic"),
-    url(../font/ProximaNovaRegularItalic.otf);
+    url(../fonts/ProximaNovaRegularItalic.otf);
 }
 @font-face {
     font-family: Proxima Nova Semibold;
     src: local("Proxima Nova Semibold"),
-    url(../font/ProximaNovaSemibold.otf);
+    url(../fonts/ProximaNovaSemibold.otf);
 }
 @font-face {
     font-family: Raleway-Light;
     src: local("Raleway-Light.ttf"),
-    url(../font/Raleway-Light.ttf);
+    url(../fonts/Raleway-Light.ttf);
 }
 @font-face {
     font-family: Raleway-Medium;
     src: local("Raleway-Medium"),
-    url(../font/Raleway-Medium.ttf);
+    url(../fonts/Raleway-Medium.ttf);
 }
-
-
-
-
+@font-face {
+    font-family: Open Sans;
+    src: local("Open Sans"),
+    url(../fonts/opensans.ttf);
+}
+@font-face {
+    font-family: Ubuntu Medium;
+    src: local("Ubuntu Medium"),
+    url(../fonts/ubuntumedium.ttf);
+}
+@font-face {
+    font-family: Glyphicons;
+    url(../font/glyphicons-halflings-regular.ttf);
+}
