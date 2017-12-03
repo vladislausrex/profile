@@ -1,105 +1,142 @@
 body {
     background-color: #ECEDF1;
-    margin-left: 100px;
+
 }
 a {
     text-decoration: none;
+    color: inherit;
 }
-ul {
+li {
     list-style: none;
 }
-.header_first {
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-    max-width: 1600px;
+.header{
+    max-width: 1180px;
+    margin: 0 auto;
 }
 .row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 210px;
-    margin-bottom: 15px;
+    margin-bottom: -5px;
 }
-.row h2 {
-    font-family: "Proxima Nova", sans-serif;
+.header h2 {
+    font-family: "Proxima Nova Bold", sans-serif;
     font-size: 30px;
     color: #344D71;
-    margin-top: 43px;
+}
+.header__social {
+    font-size: 30px;
+    color: #83969F;
 }
 .header__contacts {
     display: flex;
-    justify-content: flex-end;
-    text-align: right;
-    align-items: center;
-    font-family: "Proxima Nova Semibold",sans-serif;
-    font-size: 25px;
-    background-color: white;
     height: 50px;
+    justify-content: flex-end;
+    font-family: "Proxima Nova Semibold", sans-serif;
+    font-size: 25px;
+    align-items: center;
+    background-color: #FBFBFB;
 }
-.header__contacts>div {
-    background-color: #344D71;
-    text-align: left;
-    width: 25%;
-    color:white;
-    padding: 11px 0;
-    padding-left: 30px;
-}
-.header__contacts>p {
-    color: #A3B1B8;
-    font-family: "Proxima Nova",sans-serif;
+.header__contacts__email {
     font-size: 14px;
-    padding-right: 50px;
+    padding-right: 0;
+    margin: 0;
 }
-.header__contacts>i {
-    color: white;
-    padding: 13px 15px;
+.header__contacts__phone {
+    color: #FBFBFB;
+    background-color: #344D71;
+    padding: 0 0;
+    margin: 0;
+}
+.fa.fa-phone {
+    color: #FBFBFB;
     background-color: #DE9E20;
-    text-align: center;
+    padding: 0 0;
+    margin: 0;
 }
-.header__links {
-    color: black;
-}
-.navigation {
-    background-color: #F6B431;
+.header__navigation {
+    background-color: #DE9E20;
     height: 70px;
-    padding: 0;
-    margin: 0 0 0 210px;
+    color: #FBFBFB;
+    font-family: "Proxima Nova Semibold", sans-serif;
+    font-size: 16px;
 }
 .navigation__element {
-    display: inline-block;
-    font-family: "Proxima Nova Semibold", sans-serif;
-    font-size: 16pt;
+    display: inline;
 }
-.main {
-    margin-top: -10px;
-}
+
 .block_top {
-    margin-top: -50px;
-    display: flex;
-    background-color: gray;
+    background-color: #FBFBFB;
     background-image: url("../img/Masthead.png");
-    height: 900px;
     max-width: 1600px;
+    height: 900px;
+    margin: auto;
+    color: #FBFBFB;
 }
-.enrol {
-    background-color: #83969F;
-    width: 780px;
+.block_top__text {
+    padding-left: 0;
+    padding-top: 0;
+}
+.block_top__text h3 {
+    font-family: Raleway-Light, sans-serif;
+    font-size: 40px;
+}
+.block_top__text p {
+    font-family: "Proxima Nova Semibold", sans-serif;
     font-size: 20px;
 }
 .contact_us {
-    margin-left: 990px;
-    margin-top: 585px;
-    position: absolute;
-    display: list-item;
+    margin-left: 100px;
+    margin-top: 100px;
     background-color: #344D71;
-    height: 355px;
-    width: 340px;
-    padding: 30px;
+    position: absolute;
+    height: 425px;
+    width: 332px;
+    padding-left: 60px;
+}
+.contact_us h3 {
+    font-family: Raleway-Light, sans-serif;
+    font-size: 24px;
 }
 .contact_us p {
-    font-family: "Proxima Nova Semibold",sans-serif;
+    font-family: "Proxima Nova Semibold", sans-serif;
     font-size: 14px;
+}
+.contact_us span {
+    font-family: Ubuntu, sans-serif;
+    font-size: 13px;
+}
+.contact__placeholder {
+    width: 280px;
+    height: 45px;
+    border: none;
+    border-radius: 1%;
+}
+.subscribe__button {
+    font-family: "Proxima Nova Semibold", sans-serif;
+    font-size: 14px;
+    color: #FBFBFB;
+    height: 50px;
+    width: 280px;
+    border: none;
+    border-radius: 1%;
+    background-color: #DE9E20;
+}
+
+.enrol {
+    font-family: "Proxima Nova Semibold", sans-serif;
+    font-size: 20px;
+    color: #FBFBFB;
+    display: flex;
+    background-color: #83969F;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.enrol h3 {
+}
+.enrol a {
+    font-family: "Proxima Nova Regular", sans-serif;
+    text-decoration: underline;
 }
 
 @font-face {
