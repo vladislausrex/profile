@@ -82,7 +82,7 @@ li {
     height: 801px;
     margin: 0 auto;
     color: #FBFBFB;
-}
+} /*TODO fix position*/
 .block_top__text {
     padding-left: 0;
     padding-top: 0;
@@ -96,22 +96,24 @@ li {
     font-size: 20px;
 }
 .contact_us {
-    margin-left: 770px;
-    margin-top: -336px;
+    margin-top: -317px;
     background-color: #344D71;
-    position: absolute;
-    height: 425px;
-    width: 332px;
     padding-left: 60px;
-    /* transform: translateY(-100%); */
+    padding-right: 60px;
+    color: white;
 }
 .contact_us h3 {
     font-family: Raleway-Light, sans-serif;
     font-size: 24px;
+    padding-top: 51px;
+    margin: 0;
 }
 .contact_us p {
     font-family: "Proxima Nova Semibold", sans-serif;
     font-size: 14px;
+    padding-top: 11px;
+    padding-bottom: 28px;
+    margin: 0;
 }
 .contact_us span {
     font-family: Ubuntu, sans-serif;
@@ -119,27 +121,32 @@ li {
 }
 .contact__placeholder {
     width: 280px;
-    height: 45px;
+    height: 43px;
     border: none;
-    border-radius: 1%;
+    border-radius: 2%;
+    margin-top: 5px;
+    margin-bottom: 14px;
 }
 .subscribe__button {
     font-family: "Proxima Nova Semibold", sans-serif;
     font-size: 14px;
     color: #FBFBFB;
-    height: 50px;
+    height: 52px;
     width: 280px;
     border: none;
-    border-radius: 1%;
+    border-radius: 2%;
     background-color: #DE9E20;
+    margin-top: 3px;
 }
 .enrol {
     display: flex;
+    margin:  0 auto;
 }
 .enrol__text {
-    padding-top: 11px;
+    padding-top: 10px;
+    padding-right: 250px;
+    padding-bottom: 10px;
     background-color: #83969F;
-     height: 95px;
 }
 .enrol__text h3 {
     font-family: "Proxima Nova Semibold", sans-serif;
@@ -150,6 +157,56 @@ li {
 .enrol__text a {
     font-family: "Proxima Nova Regular", sans-serif;
     text-decoration: underline;
+}
+.base {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.base__section {
+    padding: 20px 40px;
+    width: 33%;
+}
+.base__section h3 {
+    font-family: "Proxima Nova Bold", sans-serif;
+    font-size: 15px;
+}
+.base__section li::before {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border: 2px solid orangered;
+    -moz-border-radius: 7.5px;
+    -webkit-border-radius: 7.5px;
+    border-radius: 7.5px;
+    background-color: white;
+    margin-right: 10px;
+} /*TODO make circle marker*/
+
+.section__button {
+    font-family: Ubuntu, sans-serif;
+    font-size: 16px;
+    padding: 10px 40px;
+    color: white;
+    border-radius: 2%;
+}
+.section__button.blue {
+    background: blue;
+}
+.section__button.orange {
+    background: orange;
+}
+.courses {
+}
+.courses__row {
+    display: flex;
+    margin: 0 auto;
+}
+.courses__block {
+    width: 300px;
+    height: 100px;
+    background: magenta;
 }
 .summary {
     display: flex;
