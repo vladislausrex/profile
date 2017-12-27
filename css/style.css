@@ -9,7 +9,8 @@ a {
 li {
     list-style: none;
 }
-.header, .footer__first, .footer__second, .content {
+
+.header, .footer__first, .footer__second, .content, .enrol {
     max-width: 1180px;
     margin: 0 auto;
 }
@@ -141,13 +142,13 @@ li {
 }
 .enrol {
     display: flex;
-    margin:  0 auto;
+    justify-content: space-between;
+    background-color: #83969F;
 }
 .enrol__text {
     padding-top: 10px;
-    padding-right: 250px;
     padding-bottom: 10px;
-    background-color: #83969F;
+    margin-left: -87px;
 }
 .enrol__text h3 {
     font-family: "Proxima Nova Semibold", sans-serif;
@@ -163,11 +164,13 @@ li {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    padding-bottom: 71px;
 }
 .base__section {
     padding: 20px 40px;
     width: 33%;
     padding-bottom: 3px;
+    color: #63727A;;
 }
 .base__section h3 {
     font-family: "Proxima Nova Regular", sans-serif;
@@ -201,7 +204,7 @@ li {
 } /*TODO make circle marker*/
 
 .section__button {
-    font-family: Ubuntu, sans-serif;
+    font-family: "Proxima Nova Semibold", sans-serif;
     font-size: 15px;
     padding: 17px 42px;
     color: white;
@@ -280,7 +283,7 @@ li {
     padding-top: 31px;padding-bottom: 13px;
 }
 .content__header h2{
-    font-family: "Open Sans", sans-serif;
+    font-family: "Proxima Nova Semibold", sans-serif;
     font-size: 14px;
     color: #89949A;
     padding-top: 11px;
@@ -304,6 +307,8 @@ li {
 }
 .summary__content.videos {
     padding-right: 10px;
+    font-family: "Proxima Nova Semibold", sans-serif;
+    font-size: 16px;
 }
 .content__video {
     color: white;
@@ -328,6 +333,7 @@ li {
     background-color: #253957;
     padding-top: 36px;
     padding-bottom: 36px;
+    font-family: Proxima Nova Semibold, sans-serif;
 }
 .footer__information {
     padding-left: 110px;
@@ -352,16 +358,15 @@ li {
 }
 .footer__second__text {
     font-size: 13px;
-    letter-spacing: 0.12px;
+    /*letter-spacing: 0.12px;*/
     line-height: 20px;
-    font-family: Proxima Nova Regular, sans-serif;
+    font-family: Proxima Nova Semibold, sans-serif;
 }
 
 p.footer__second__text {}
 .contacts.footer {
     transform: translateY(-118%);
 }
-
 @font-face {
     font-family: FontAwesome;
     src: local("FontAwesome"),
