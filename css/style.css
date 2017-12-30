@@ -10,7 +10,7 @@ li {
     list-style: none;
 }
 
-.header, .footer__first, .footer__second, .content, .enrol {
+.header, .footer__first, .footer__second, .courses, .base,.summary, .enrol {
     max-width: 1180px;
     margin: 0 auto;
 }
@@ -54,9 +54,7 @@ li {
 .fa.fa-phone {
     color: #FBFBFB;
     background-color: #DE9E20;
-    padding: 0 20px;
-    padding-bottom: 14px;
-    padding-top: 15px;
+    padding: 15px 20px 14px;
 }
 .header__navigation {
     background-color: #DE9E20;
@@ -74,7 +72,6 @@ li {
 }
 .main {
     margin-top: -40px;
-    /* padding-bottom: 5px; */
 }
 .block_top {
     background-color: #FBFBFB;
@@ -164,32 +161,39 @@ li {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    padding-bottom: 71px;
+    padding-bottom: 47px;
     background-color: white;
 }
 .base__section {
-    padding: 20px 40px;
-    width: 33%;
-    padding-bottom: 3px;
+    max-width: 33%;
+    padding-top: 23px;
+    padding-right: 10px;
     color: #63727A;
 }
+.base__article {padding-left: 40px;padding-bottom: 62px;}
 .base__section h3 {
     font-family: "Proxima Nova Regular", sans-serif;
     font-size: 22px;
     font-weight: normal;
+    letter-spacing: -0.2px;
 }
 .base__section p {
     font-family: "Proxima Nova Regular", sans-serif;
     font-size: 14px;
-    padding-top: 7px;
+    line-height: 1.9;
 }
+.base__article__text {
+    padding-right: 28px;
+}
+.base__list__text {padding-left: 36px;line-height: 1.2;}
 .base__section ul {
-    padding-left: 0;
-    margin-top: 30px;
-    padding-bottom: 8px;
+    padding-top: 3px;
+    padding-left: 4px;
+    margin: 0;
+    letter-spacing: -0.3px;
 }
 .base__section li {
-    padding-bottom: 22px;
+    padding-bottom: 20px;
 }
 .base__section li::before {
     content: '';
@@ -210,6 +214,7 @@ li {
     padding: 17px 42px;
     color: white;
     border-radius: 4%;
+    margin-left: 37px;
 }
 .section__button.blue {
     background: blue;
@@ -219,21 +224,23 @@ li {
 }
 .base__video {
     background: url("../img/Layer 16.png");
+    background-color: black;
     background-size: cover;
-    padding-top: 190px;
-    padding-bottom: 34px;
-    margin-top: -20px;
-    margin-left: -46px;
-    margin-right: -41px;
-    padding-left: 78px;
+    padding-top: 184px;
+    padding-bottom: 32px;
+    margin-top: -23px;
+    padding-left: 32px;
+    align-items:  center;
+    display:  flex;
+    margin-right: -10px;
 }/*TODO find better solution*/
+
 .base__video a {
     color: white;
     font-size: 18px;
+    padding-left: 15px;
 }
-
-.courses {
-}
+.base__video__text {padding-top: 16px;padding-left: 38px;padding-right: 14px;}
 .courses__row {
     display: flex;
     margin: 0 auto;
@@ -272,77 +279,100 @@ li {
 }
 .summary {
     display: flex;
-    justify-content: space-between;
     background-color: white;
     padding-bottom: 7px;
 }
-.summary__content {
-    width: 34%;
+.summary__content__header.blog {
+    padding-left: 54px;
 }
-.summary__content.blog {
-    padding-left: 68px;
+
+.summary__content__article.blog {
+    padding-right: 44px;
+    padding-left: 57px;
 }
-.content__article {
-    padding-top: 31px;
-    padding-bottom: 13px;
+.summary__content__article {
+    padding-top: 17px;
+    padding-bottom: 31px;
+    padding-right: 60px;
 }
-.content__header h2{
+.summary__content__header h2{
     font-family: "Proxima Nova Semibold", sans-serif;
     font-size: 14px;
     color: #89949A;
-    padding-top: 11px;
+    padding-top: 22px;
+    margin-top: 0;
 }
-.content__article h3 {
+.summary__content__article h3 {
     font-family: "Proxima Nova Regular", sans-serif;
     font-size: 16px;
     color: #F5B431;
     margin-bottom: -4px;
 }
-.content__article p {
+
+.summary__background {
+    background-color: #FAFAFA;
+}
+.summary__content p {
     font-family: "Proxima Nova Regular", sans-serif;
     font-size: 14px;
     color: #324A6D;
     margin-bottom: 9px;
 }
-.content__article time {
+.summary__content.blog {
+    border-left: 1px solid #ECE8E8;
+}
+.summary__content__article time {
     font-family: "Proxima Nova Regular Italic", sans-serif;
     font-size: 14px;
     color: #ABB0B6;
 }
 .summary__content.videos {
-    padding-right: 10px;
     font-family: "Proxima Nova Semibold", sans-serif;
     font-size: 16px;
 }
-.content__video {
-    color: white;
-    margin-right: 8px;
-    margin-bottom: 10px;
-    padding-top: 157px;
-    padding-bottom: 8px;
-    padding-left: 63px;
-    font-size: 18px;
+.summary__content__header {
+    padding-bottom: 12px;
+    border-bottom:  1px solid #ECE8E8;
+    background-color: #FAFAFA;
 }
-.content__video.first {
+.summary__content__video {
+    color: white;
+    padding: 162px 12px 25px 20px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+.summary__content__video.first {
     background: url("../img/Layer 9.png");
     background-size: cover;
-    margin-top: 39px;
+    background-color: black;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
-.content__video.second {
+.summary__content__video.second {
     background: url("../img/Layer 8.png");
     background-size: cover;
+    background-color: black;
+    padding-bottom: 17px;
+    padding-top: 170px;
+    margin-bottom: 10px;
+}
+.summary__content__video span {
+    padding-left: 12px;
 }
 .footer__first {
     display: flex;
-    background-color: #253957;
     font-family: Proxima Nova Semibold, sans-serif;
     letter-spacing: -0.5px;
 }
+.footer_dark {
+    background-color: #253957;
+}
 .footer__about_us {
-    padding-right: 70px;
+    padding-right: 55px;
 }
 .footer__information {
-    padding-left: 24px;
+    padding-left: 40px;
     padding-right: 87px;
     border-right: 1px solid #344D71;
     border-left: 1px solid #344D71;
@@ -370,9 +400,11 @@ li {
     font-size: 14px;padding-bottom: 16px;
 }
 
+.footer_light {
+    background-color: #344D71;
+}
 .footer__second {
     display: flex;
-    background-color: #344D71;
     padding-top: 13px;
     justify-content: space-between;
 }
@@ -436,5 +468,3 @@ p.footer__second__text {}
     font-family: Glyphicons;
     url(../font/glyphicons-halflings-regular.ttf);
 }
-/*TODO fix fonts/colors*/
-/*TODO make pseudo*/
