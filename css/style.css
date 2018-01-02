@@ -46,7 +46,8 @@ li {
     font-size: 14px;
     padding-right: 42px;
 }
-.header__contacts__phone {
+
+.contacts__phone {
     color: #FBFBFB;
     background-color: #344D71;
     padding: 13px 31px;
@@ -64,11 +65,28 @@ li {
     font-size: 16px;
     margin-top: -2px;
     padding-top: 30px;
-    padding-left: 23px;
+    padding-left: 36px;
+}
+
+.header__navigation img {
+    padding-left: 8px;
+    padding-top: 2px;
 }
 .navigation__element {
     display: inline;
-    padding-left: 15px;
+}
+
+.navigation__element + .navigation__element {
+    padding-left: 30px;
+}
+
+.navigation__element:nth-child(5) {
+    padding-right: 35px;
+    padding-left: 55px;
+}
+
+.navigation__element:nth-child(6) {
+    padding-right: 8px;
 }
 .main {
     margin-top: -40px;
@@ -142,6 +160,17 @@ li {
     justify-content: space-between;
     background-color: #83969F;
 }
+
+.enrol__text::before {
+    content: '';
+    background-color: black;
+    position: absolute;
+    height: 100px;
+    /* width: 1084px; */
+    /* padding-left: 1000px; */
+    padding-right: 1000px;
+    margin-left: -913px;
+}
 .enrol__text {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -185,27 +214,44 @@ li {
 .base__article__text {
     padding-right: 28px;
 }
-.base__list__text {padding-left: 36px;line-height: 1.2;}
+
+.base__list__text {
+    padding-left: 36px;
+    line-height: 1.2;
+    padding-bottom: 20px;
+}
 .base__section ul {
     padding-top: 3px;
     padding-left: 4px;
     margin: 0;
-    letter-spacing: -0.3px;
+    letter-spacing: -0.4px;
+    font-size: 15px;
+    font-family: "Proxima Nova Regular", sans-serif;
 }
 .base__section li {
-    padding-bottom: 20px;
+    padding-bottom: 23px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.base__section li:nth-child(4) {
+    padding-bottom: 5px;
+    padding-left: 20px;
+    position: relative;
 }
 .base__section li::before {
     content: '';
     display: inline-block;
-    width: 5px;
-    height: 5px;
+    width: 7px;
+    height: 7px;
     border: 2px solid orangered;
     -moz-border-radius: 7.5px;
     -webkit-border-radius: 7.5px;
     border-radius: 7.5px;
     background-color: white;
-    margin-right: 10px;
+    position: absolute;
+    margin-left: -22px;
+    margin-top: 2px;
 } /*TODO make circle marker*/
 
 .section__button {
@@ -216,11 +262,14 @@ li {
     border-radius: 4%;
     margin-left: 37px;
 }
-.section__button.blue {
-    background: blue;
+
+.section__button.East_Bay {
+    background: #3A557C;
+    margin-left: 40px;
 }
-.section__button.orange {
-    background: orange;
+
+.section__button.Saffron {
+    background: #F6B431;
 }
 .base__video {
     background: url("../img/Layer 16.png");
