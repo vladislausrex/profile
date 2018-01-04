@@ -68,7 +68,6 @@ li {
     margin-top: 25px;
 }
 .header__navigation {
-    /* background-color: #DE9E20; */
     height: 70px;
     color: #FBFBFB;
     font-family: "Proxima Nova Semibold", sans-serif;
@@ -105,10 +104,12 @@ li {
     margin: 0 auto;
     max-width: 1600px;
 } /*TODO fix position*/
+
 .block_top__text {
     background: url("../img/Masthead.png") no-repeat;
+    background-size: cover;
     padding-top: 125px;
-    padding-left: 985px;
+    padding-left: 73%;
     padding-bottom: 600px;
     margin-left: -124px;
     margin-top: -115px;
@@ -136,7 +137,7 @@ li {
 .contact_us h3 {
     font-family: Raleway-Light, sans-serif;
     font-size: 24px;
-    padding-top: 51px;
+    padding-top: 50px;
     margin: 0;
 }
 .contact_us p {
@@ -185,7 +186,7 @@ li {
 .enrol__text {
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-left: -337px;
+    /* margin-left: -29%; */
 }
 .enrol__text h3 {
     font-family: "Proxima Nova Semibold", sans-serif;
@@ -398,21 +399,21 @@ li {
 }
 .summary__content__video {
     color: white;
-    padding: 162px 36px 25px 20px;
+    padding: 160px 36px 25px 20px;
     font-size: 16px;
     display: flex;
     align-items: center;
 }
 .summary__content__video.first {
     background-size: cover;
-    background: #000000 url("../img/Layer 9.png");
+    background: #000000 url("../img/Layer 9.png") no-repeat;
     margin-top: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 13px;
 }
 .summary__content__video.second {
     background-size: cover;
-    background: #000000 url("../img/Layer 8.png");
-    padding-bottom: 17px;
+    background: #000000 url("../img/Layer 8.png") no-repeat;
+    padding-bottom: 15px;
     padding-top: 170px;
     margin-bottom: 10px;
 }
@@ -477,6 +478,8 @@ li {
 p.footer__second__text {}
 .contacts.footer {
     transform: translateY(-119%);
+    /* margin-right: 40px; */
+    /* width: 24%; */
 }
 @font-face {
     font-family: FontAwesome;
@@ -527,4 +530,77 @@ p.footer__second__text {}
     font-family: Glyphicons;
     url(../font/glyphicons-halflings-regular.ttf);
 }
+@media (min-width: 826px) and (max-width: 1300px) {
+    .header__navigation {
+        padding-left: 13%;
+    }
+    .contacts.footer {
+        position: absolute;
+        margin-left: 64%;
+    }
+}
+@media screen and (max-width: 825px) {
+    .header__navigation {
+        display: flex;
+    }
+    .contacts.footer {
+        position: absolute;
+        margin-left: 59%;
+    }
+    .navigation__element {
+        padding: 1%;
+
+    }.navigation__element + .navigation__element {
+        padding: 0 6px 0 0;
+    }
+    .block_top__text {
+    margin-left: -210px;
+    }
+    .enrol {
+        flex-direction: column;
+    }
+    .contact_us {
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+    .base {
+        display:  flex;
+        flex-direction:  column;
+    }
+    .base__section {
+        max-width: 100%;
+        padding-bottom: 50px;
+    }
+    .base__video {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+    .base__list__text {
+        padding-left: 25%;
+    }
+    .section__button.East_Bay, .section__button {
+        margin-left: 41%;
+    }
+    .courses {
+         display:  flex;
+    }
+    .courses__row {
+         flex-direction: column;
+    }
+    .courses__block {
+         width: 100%;
+         padding: 6%;
+         margin: 0;
+    }
+    .summary {
+        flex-direction: column;
+    }
+    .summary__content {
+        margin: 0 auto;
+    }
+    .contacts.footer {
+        position: absolute;
+        margin-left: 52%;
+    }
+}/*TODO fix this shit too*/
 /*TODO use svg*/
